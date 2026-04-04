@@ -65,6 +65,12 @@ This uses `colormode: "binary"` for black/white line art style output, which wor
 
 Using `color_precision: 3` reduces the number of colors dramatically, producing an artistic posterized vector effect. Great for stylized illustrations.
 
+### 4. Convert a base64 image directly
+
+> "Convert this base64 image to SVG: iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAO0lEQVR4nGP8z8Dwn4EIwESMIqwKGRn+MzBisYQJXRE2NopCbKYgi5Huxv8MjBiSyGJMuCTQNTJSPRwBCjYOD5JU5rIAAAAASUVORK5CYII="
+
+This is a 10x10 red square with a blue circle in the middle. Useful for testing the tool with inline image data — no URL needed.
+
 ## Tool Parameters
 
 | Parameter | Type | Default | Range | Description |
