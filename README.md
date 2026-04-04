@@ -2,7 +2,7 @@
 
 [![PyPI](https://img.shields.io/pypi/v/image2svg-mcp)](https://pypi.org/project/image2svg-mcp/)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
-[![Tests](https://github.com/botmonster/image2svg-mcp/actions/workflows/python-package.yml/badge.svg)](https://github.com/botmonster/image2svg-mcp/actions/workflows/python-package.yml)
+[![Tests](https://github.com/botmonster/image2svg-mcp/actions/workflows/tests.yml/badge.svg)](https://github.com/botmonster/image2svg-mcp/actions/workflows/tests.yml)
 
 An MCP server that converts raster images (PNG, JPG, WEBP) to scalable SVG vector graphics.
 
