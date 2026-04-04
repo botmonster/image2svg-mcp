@@ -1,9 +1,12 @@
 import io
+from pathlib import Path
 
 import pytest
 from PIL import Image
 
 from image2svg_mcp.convert import convert_image_bytes_to_svg
+
+FIXTURES_DIR = Path(__file__).parent
 
 
 def test_basic_png_conversion(red_square_png_bytes):
@@ -70,5 +73,16 @@ def test_cmyk_input():
 
     result = convert_image_bytes_to_svg(cmyk_bytes)
     assert "<svg" in result.svg_content
+    assert result.width == 10
+    assert result.height == 10
+
+
+def test_red_square_blue_circle_png():
+    """Convert the sample red square with blue circle PNG file."""
+    png_path = FIXTURES_DIR / "red_square_blue_circle.png"
+    image_bytes = png_path.read_bytes()
+    result = convert_image_bytes_to_svg(image_bytes)
+    assert "<svg" in result.svg_content
+    assert "</svg>" in result.svg_content
     assert result.width == 10
     assert result.height == 10
