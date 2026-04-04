@@ -59,7 +59,7 @@ claude mcp add image2svg --transport http --scope user http://localhost:8000/mcp
 
 This enables prompts like:
 
-> "Convert this local file to SVG: /home/user/images/logo.png"
+> Convert this local file to SVG: file://logo.png
 
 Only files inside the specified directory (and its subdirectories) are accessible. Paths are normalized to prevent directory traversal. Without this flag, `file://` URLs are rejected.
 
@@ -69,19 +69,19 @@ Here are some examples of what you can tell an LLM to do with this tool:
 
 ### 1. Simple image-to-SVG conversion
 
-> "Generate an image of a sunset over mountains, then convert it to SVG."
+> Generate an image of a sunset over mountains, then convert it to SVG.
 
 The LLM will generate a raster image and then use the `convert_image_to_svg` tool with default settings to produce a clean vector version.
 
 ### 2. Fine-tuned conversion with specific parameters
 
-> "Create a logo with a blue circle and a white star inside it. Now convert it to SVG using binary colormode for crisp edges and set filter_speckle to 10 to remove noise."
+> Create a logo with a blue circle and a white star inside it. Now convert it to SVG using binary colormode for crisp edges and set filter_speckle to 10 to remove noise.
 
 This uses `colormode: "binary"` for black/white line art style output, which works great for logos and icons. The higher `filter_speckle` value removes small artifacts.
 
 ### 3. Convert from URL with minimalist style
 
-> "Convert this image to a simplified SVG with low color precision for a minimalist poster look: https://example.com/photo.png"
+> Convert this image to a simplified SVG with low color precision for a minimalist poster look: https://example.com/photo.png
 
 Using `color_precision: 3` reduces the number of colors dramatically, producing an artistic posterized vector effect. Great for stylized illustrations.
 
