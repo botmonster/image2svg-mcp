@@ -41,6 +41,21 @@ with access to local files:
 claude mcp add image2svg --scope user -- uvx image2svg-mcp --allow-local-files-path /home/user/images
 ```
 
+### Docker
+
+Run as an HTTP server:
+
+```bash
+docker run -p 8000:8000 ghcr.io/botmonster/image2svg-mcp
+```
+
+With local file access:
+
+```bash
+docker run -p 8000:8000 -v /home/user/images:/images ghcr.io/botmonster/image2svg-mcp --allow-local-files-path /images
+claude mcp add image2svg --transport http --scope user http://localhost:8000/mcp
+```
+
 This enables prompts like:
 
 > "Convert this local file to SVG: /home/user/images/logo.png"
@@ -71,7 +86,7 @@ Using `color_precision: 3` reduces the number of colors dramatically, producing 
 
 ### 4. Convert a base64 image directly
 
-> "Convert this base64 image to SVG: iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAO0lEQVR4nGP8z8Dwn4EIwESMIqwKGRn+MzBisYQJXRE2NopCbKYgi5Huxv8MjBiSyGJMuCTQNTJSPRwBCjYOD5JU5rIAAAAASUVORK5CYII="
+> Convert this base64 image to SVG: iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAO0lEQVR4nGP8z8Dwn4EIwESMIqwKGRn+MzBisYQJXRE2NopCbKYgi5Huxv8MjBiSyGJMuCTQNTJSPRwBCjYOD5JU5rIAAAAASUVORK5CYII=
 
 This is a 10x10 red square with a blue circle in the middle. Useful for testing the tool with inline image data — no URL needed.
 
