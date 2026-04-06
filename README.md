@@ -18,6 +18,8 @@ An MCP server that converts raster images (PNG, JPG, WEBP) to scalable SVG vecto
 
 ## Usage
 
+To see it in action check [converting image to svg online](https://botmonster.com/image2svg/).
+
 ### Claude Code & Claude Desktop
 
 Add to your `settings.json`:
