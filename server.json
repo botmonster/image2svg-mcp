@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.botmonster/image2svg-mcp",
+  "description": "MCP server that converts raster images (PNG/JPG/WEBP) to SVG vector format",
+  "title": "Image to SVG",
+  "websiteUrl": "https://botmonster.com/image2svg",
+  "repository": {
+    "url": "https://github.com/botmonster/image2svg-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "image2svg-mcp",
+      "version": "1.0.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

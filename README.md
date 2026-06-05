@@ -1,3 +1,5 @@
+<!-- mcp-name: io.github.botmonster/image2svg-mcp -->
+
 # image2svg-mcp
 
 [![PyPI](https://img.shields.io/pypi/v/image2svg-mcp)](https://pypi.org/project/image2svg-mcp/)
