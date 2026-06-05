@@ -1,6 +1,6 @@
 [project]
 name = "image2svg-mcp"
-version = "1.0.0"
+version = "1.0.1"
 description = "MCP server that converts raster images (PNG/JPG/WEBP) to SVG vector format"
 readme = "README.md"
 license = "Apache-2.0"
