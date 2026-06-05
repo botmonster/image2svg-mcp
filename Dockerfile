@@ -12,4 +12,4 @@ ENV FASTMCP_PORT=8000
 
 EXPOSE 8000
 
-ENTRYPOINT ["uv", "run", "image2svg-mcp"]
+ENTRYPOINT ["sh", "-c", "export FASTMCP_PORT=\"${PORT:-$FASTMCP_PORT}\"; exec uv run image2svg-mcp \"$@\"", "--"]

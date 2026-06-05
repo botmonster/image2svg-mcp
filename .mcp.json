@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "image2svg": {
+      "command": "uvx",
+      "args": ["image2svg-mcp"]
+    }
+  }
+}
