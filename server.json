@@ -3,7 +3,7 @@
   "name": "io.github.botmonster/image2svg-mcp",
   "description": "MCP server that converts raster images (PNG/JPG/WEBP) to SVG vector format",
   "title": "Image to SVG",
-  "websiteUrl": "https://botmonster.com/image2svg",
+  "websiteUrl": "https://botmonster.com/image2svg/",
   "repository": {
     "url": "https://github.com/botmonster/image2svg-mcp",
     "source": "github"

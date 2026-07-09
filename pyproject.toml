@@ -33,7 +33,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://botmonster.com/image2svg"
+Homepage = "https://botmonster.com/image2svg/"
 Repository = "https://github.com/botmonster/image2svg-mcp"
 Issues = "https://github.com/botmonster/image2svg-mcp/issues"
 
